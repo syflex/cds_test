@@ -42,7 +42,7 @@
                                 <td>{{$item['name']}}</td>
                                 <td>{{$item['title']}}</td>
                                 <td>{{ substr($item['heading'],  0,  50) }}</td>
-                                <td>{!! substr($item['content'],  0,  100) !!}</td>
+                                <td>{!! substr($item['content'],  0,  200) !!}</td>
                                 <td>
                                     <a href="{{ route('page.edit', $item['id']) }}" class="btn btn-primary btn-sm">Edit</a>
                                     <form action="{{route('page.update', $item->id)}}" method="POST">
