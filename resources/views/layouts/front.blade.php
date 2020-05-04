@@ -32,18 +32,18 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165353516-1"></script>
 
-        {{-- <script>
+        <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', '{{$global_settings->google_analytics_tag}}');
-        </script> --}}
+        </script>
 
         {{-- {{dd($global_settings->fb_ads_pixel)}} --}}
 
         <!-- Facebook Pixel Code -->
-        {{-- <script>
+        <script>
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -54,17 +54,15 @@
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '{{$global_settings->fb_ads_pixel}}');
             fbq('track', 'PageView');
-        </script> --}}
-        {{-- <noscript><img height="1" width="1" style="display:none"
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id={{$global_settings->fb_ads_pixel}}&ev=PageView&noscript=1"
-        /></noscript> --}}
-        <!-- End Facebook Pixel Code -->
-
+        /></noscript>
+      
         </head>
 
         <body>
 
-        <!-- ======= Header ======= -->
         <header id="header" class="fixed-top ">
             <div class="container d-flex align-items-center">
 
@@ -84,17 +82,14 @@
 
 
         @yield('content')
-
-    <!--= Footer ======= -->
+        
         <footer id="footer">
             <div class="container copyright">
                 &copy; 2013-2016 BeMo Academic Consulting Inc. All rights reserved. . <a href="http://www.cdainterview.com/disclaimer-privacy-policy.html"target="_blank"><span style="text-decoration:underline;">Disclaimer & Privacy Policy</span></a>
             </div>
-        </footer><!-- End Footer -->
+        </footer>
+        
         <a href="#" class="back-to-top" style="display: inline;"><i class="icofont-long-arrow-up"></i></a>
-
-        <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
-        {{-- <div id="preloader"></div> --}}
 
         <!-- Vendor JS Files -->
 

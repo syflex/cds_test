@@ -20,7 +20,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    {{-- @trixassets --}}
+  
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
 </head>
@@ -47,7 +47,7 @@
                             <a class="nav-link" href="{{ url('home') }}">{{ __('Home') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('globals') }}">{{ __('Global Settings') }}</a>
+                            <a class="nav-link" href="{{ url('globals') }}">{{ __('Settings') }}</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest
