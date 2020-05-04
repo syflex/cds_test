@@ -13,8 +13,8 @@ class GlobalSeeder extends Seeder
     public function run()
     {
         DB::table('globals')->insert([
-            'fb_ads_pixel' => '547445562579633',
-            'google_analytics_tag' => 'UA-165353516-1',
+            'fb_ads_pixel' => '600487757478976',
+            'google_analytics_tag' => 'GTM-TWBRS5J',
             'contact_email' => 'syflex360@gmail.com',
         ]);
     }

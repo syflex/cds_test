@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('layouts.main', function ($view) {
+        View::composer('layouts.front', function ($view) {
             $view->with('global_settings',  DB::table('globals')->first());
         });
     }
